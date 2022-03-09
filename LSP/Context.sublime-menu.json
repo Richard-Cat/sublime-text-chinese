@@ -1,0 +1,53 @@
+[
+    {
+        "caption": "LSP",
+        "children":
+        [
+            {
+                "command": "lsp_symbol_references",
+                "caption": "转到引用"
+            },
+            {
+                "command": "lsp_symbol_definition",
+                "caption": "转到定义"
+            },
+            {
+                "command": "lsp_symbol_type_definition",
+                "caption": "转到类型定义"
+            },
+            {
+                "command": "lsp_symbol_declaration",
+                "caption": "转到声明"
+            },
+            {
+                "command": "lsp_symbol_implementation",
+                "caption": "Goto Implementation…"
+            },
+            {
+                "command": "lsp_symbol_rename",
+                "caption": "重命名符号"
+            },
+            {
+                "command": "lsp_code_actions",
+                "caption": "Code Action…"
+            },
+            {
+                "command": "lsp_code_actions",
+                "args": {"only_kinds": ["source"]},
+                "caption": "Source Action…"
+            },
+            {
+                "command": "lsp_format_document",
+                "caption": "格式化文档"
+            },
+            {
+                "command": "lsp_format_document_range",
+                "caption": "格式化选定内容"
+            },
+            {
+                "command": "lsp_expand_selection",
+                "caption": "Expand Selection"
+            }
+        ]
+    }
+]
