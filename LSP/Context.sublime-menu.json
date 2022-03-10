@@ -1,8 +1,8 @@
 [
-    {
-        "command": "lsp_symbol_references",
-        "caption": "转到引用"
-    },
+    // {
+    //     "command": "lsp_symbol_references",
+    //     "caption": "转到引用"
+    // },
     // {
     //     "command": "lsp_symbol_definition",
     //     "caption": "转到定义"
@@ -48,8 +48,8 @@
     //     "command": "lsp_expand_selection",
     //     "caption": "Expand Selection"
     // },
-    {
-        "caption": "-",
-        "id": "diff"
-    }
+    // {
+    //     "caption": "-",
+    //     "id": "diff"
+    // }
 ]
