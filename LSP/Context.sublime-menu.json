@@ -1,8 +1,8 @@
 [
-    // {
-    //     "command": "lsp_symbol_references",
-    //     "caption": "转到引用"
-    // },
+    {
+        "command": "lsp_symbol_references",
+        "caption": "转到引用"
+    },
     // {
     //     "command": "lsp_symbol_definition",
     //     "caption": "转到定义"
