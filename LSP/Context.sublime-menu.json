@@ -1,55 +1,15 @@
 [
-    {
-        "command": "lsp_symbol_references",
-        "caption": "LSP：转到引用"
-    },
-    {
-        "command": "lsp_symbol_definition",
-        "caption": "LSP：转到定义"
-    },
-    {
-        "command": "lsp_symbol_type_definition",
-        "caption": "LSP：转到类型定义"
-    },
-    {
-        "command": "lsp_symbol_declaration",
-        "caption": "LSP：转到声明"
-    },
-    {
-        "command": "lsp_symbol_implementation",
-        "caption": "LSP：Goto Implementation…"
-    },
-    {
-        "command": "lsp_symbol_rename",
-        "caption": "LSP：重命名符号"
-    },
-    {
-        "command": "lsp_code_actions",
-        "caption": "LSP：Code Action…"
-    },
-    {
-        "command": "lsp_code_actions",
-        "args": {
-            "only_kinds": [
-                "source"
-            ]
-        },
-        "caption": "LSP：Source Action…"
-    },
-    {
-        "command": "lsp_format_document",
-        "caption": "LSP：格式化文档"
-    },
-    {
-        "command": "lsp_format_document_range",
-        "caption": "LSP：格式化选定内容"
-    },
-    {
-        "command": "lsp_expand_selection",
-        "caption": "LSP：Expand Selection"
-    },
-    {
-        "caption": "-",
-        "id": "diff"
-    }
+    {"caption": "-"},
+    {"command": "lsp_symbol_references", "caption": "LSP：转到引用"},
+    {"command": "lsp_symbol_definition", "caption": "LSP：转到定义"},
+    {"command": "lsp_symbol_type_definition", "caption": "LSP：转到类型定义"},
+    {"command": "lsp_symbol_declaration", "caption": "LSP：转到声明"},
+    {"command": "lsp_symbol_implementation", "caption": "LSP：Goto Implementation…"},
+    {"command": "lsp_symbol_rename", "caption": "LSP：重命名符号"},
+    {"command": "lsp_code_actions", "caption": "LSP：Code Action…"},
+    {"command": "lsp_code_actions", "args": {"only_kinds": ["source"]}, "caption": "LSP：Source Action…"},
+    {"command": "lsp_format_document", "caption": "LSP：格式化文档"},
+    {"command": "lsp_format_document_range", "caption": "LSP：格式化选定内容"},
+    {"command": "lsp_expand_selection", "caption": "LSP：Expand Selection"},
+    {"caption": "-", "id": "diff"}
 ]
