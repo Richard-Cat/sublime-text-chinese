@@ -18,8 +18,5 @@
     {"caption": "-"},
     {"caption": "编译", "command": "build"},
     {"caption": "-", "id": "diff"},
-    {"caption": "显示未保存的更改", "command": "diff_changes"},
-    {"caption": "-", "id": "diff"},
-    {"caption": "格式化(Lua)", "command": "lua_format"},
-    {"caption": "对齐", "command": "alignment"}
+    {"caption": "显示未保存的更改", "command": "diff_changes"}
 ]
