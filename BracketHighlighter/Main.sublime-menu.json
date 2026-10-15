@@ -1,0 +1,316 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "id": "packages",
+                "caption": "插件",
+                "children":
+                [
+                    {
+                        "caption": "BracketHighlighter",
+                        "children":
+                        [
+                            // 全局启用/禁用切换
+                            {
+                                "caption": "BracketHighlighter：全局启用/禁用切换",
+                                "command": "bh_toggle_enable"
+                            },
+                            { "caption": "-" },
+                            // 搜索到文件末尾以匹配括号
+                            {
+                                "caption": "匹配括号（忽略阈值）",
+                                "command": "bh_key",
+                                "args": {"lines" : true}
+                            },
+                            // 删除括号
+                            {
+                                "caption": "删除括号",
+                                "command": "bh_remove_brackets"
+                            },
+                            // 跳到左括号
+                            {
+                                "caption": "跳转到左括号",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "no_outside_adj": null,
+                                    "no_block_mode": null,
+                                    "lines" : true,
+                                    "plugin":
+                                    {
+                                        "type": ["__all__"],
+                                        "command": "bh_modules.bracketselect",
+                                        "args": {"select": "left"}
+                                    }
+                                }
+                            },
+                            // 跳到右括号
+                            {
+                                "caption": "跳转到右括号",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "no_outside_adj": null,
+                                    "no_block_mode": null,
+                                    "lines" : true,
+                                    "plugin":
+                                    {
+                                        "type": ["__all__"],
+                                        "command": "bh_modules.bracketselect",
+                                        "args": {"select": "right"}
+                                    }
+                                }
+                            },
+                            // 选中括号之间的文本
+                            {
+                                "caption": "选中括号内容",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "no_outside_adj": null,
+                                    "lines" : true,
+                                    "plugin":
+                                    {
+                                        "type": ["__all__"],
+                                        "command": "bh_modules.bracketselect"
+                                    }
+                                }
+                            },
+                            // 选中含括号在内的内容
+                            {
+                                "caption": "选中括号内容（含括号）",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "no_outside_adj": null,
+                                    "lines" : true,
+                                    "plugin":
+                                    {
+                                        "type": ["__all__"],
+                                        "command": "bh_modules.bracketselect",
+                                        "args": {"always_include_brackets": true}
+                                    }
+                                }
+                            },
+                            // 折叠括号之间的内容
+                            {
+                                "caption": "折叠括号内容",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "plugin": {
+                                        "type": ["__all__"],
+                                        "command" : "bh_modules.foldbracket"
+                                    }
+                                }
+                            },
+                            { "caption": "-" },
+                            // 切换字符串括号的普通转义与正则转义模式
+                            {
+                                "caption": "切换字符串括号转义模式",
+                                "command": "bh_toggle_string_escape_mode"
+                            },
+                            // 切换高可见模式
+                            {
+                                "caption": "切换高可见模式",
+                                "command": "bh_toggle_high_visibility"
+                            },
+                            { "caption": "-" },
+                            // 选中 HTML/XML 标签名（开始标签与结束标签名同时选中）
+                            {
+                                "caption": "选中标签名（含开始与结束标签）",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "plugin":
+                                    {
+                                        "type": ["cfml", "html", "angle"],
+                                        "command": "bh_modules.tagnameselect"
+                                    }
+                                }
+                            },
+                            // 选中光标右侧的属性（在标签内循环）
+                            {
+                                "caption": "选中下一个属性（向右）",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "plugin":
+                                    {
+                                        "type": ["cfml", "html", "angle"],
+                                        "command": "bh_modules.tagattrselect",
+                                        "args": {"direction": "right"}
+                                    }
+                                }
+                            },
+                            // 选中光标左侧的属性（在标签内循环）
+                            {
+                                "caption": "选中下一个属性（向左）",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "plugin":
+                                    {
+                                        "type": ["cfml", "html", "angle"],
+                                        "command": "bh_modules.tagattrselect",
+                                        "args": {"direction": "left"}
+                                    }
+                                }
+                            },
+                            { "caption": "-" },
+                            // 单引号字符串与双引号字符串互转
+                            // 会自动处理串内引号的转义与反转义
+                            {
+                                "caption": "互换引号",
+                                "command": "bh_key",
+                                "args":
+                                {
+                                    "lines" : true,
+                                    "plugin":
+                                    {
+                                        "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+                                        "command": "bh_modules.swapquotes"
+                                    }
+                                }
+                            },
+                            // 互换括号
+                            {
+                                "caption": "互换括号",
+                                "command": "swap_brackets"
+                            },
+                            // 从快速面板中选择括号来包裹选区
+                            {
+                                "caption": "用括号包裹选区",
+                                "command": "wrap_brackets"
+                            },
+                            {"caption": "-"},
+                            {
+                                "caption": "调试模式",
+                                "command": "bh_debug"
+                            },
+                            {
+                                "caption": "按键名过滤规则",
+                                "command": "bh_debug_rule",
+                                "args": {"filter_key": true}
+                            },
+                            {
+                                "caption": "显示合并后的规则",
+                                "command": "bh_debug_rule"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "插件设置",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "BracketHighlighter",
+                        "children":
+                        [
+                            {
+                                "command": "edit_settings", "args": {
+                                    "base_file": "${packages}/BracketHighlighter/bh_core.sublime-settings",
+                                    "default": "{\n$0\n}\n"
+                                },
+                                "caption": "Bracket设置"
+                            },
+                            {
+                                "command": "edit_settings", "args": {
+                                    "base_file": "${packages}/BracketHighlighter/bh_tag.sublime-settings",
+                                    "default": "{\n$0\n}\n"
+                                },
+                                "caption": "Tag设置"
+                            },
+                            {
+                                "command": "edit_settings", "args": {
+                                    "base_file": "${packages}/BracketHighlighter/bh_wrapping.sublime-settings",
+                                    "default": "{\n$0\n}\n"
+                                },
+                                "caption": "Wrap设置"
+                            },
+                            {
+                                "command": "edit_settings", "args": {
+                                    "base_file": "${packages}/BracketHighlighter/bh_swapping.sublime-settings",
+                                    "default": "{\n$0\n}\n"
+                                },
+                                "caption": "Swap设置"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/BracketHighlighter/Example.sublime-keymap"},
+                                "caption": "快捷键示例"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "快捷键设置 – 用户"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "快捷键设置 – 用户"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "快捷键设置 – 用户"
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "更新日志",
+                                "command": "bracket_highlighter_changes"
+                            },
+                            {
+                                "caption": "文档",
+                                "command": "bracket_highlighter_open_site",
+                                "args": {
+                                    "url": "http://facelessuser.github.io/BracketHighlighter/"
+                                }
+                            },
+                            {
+                                "caption": "快速入门指南",
+                                "command": "bracket_highlighter_doc",
+                                "args": {
+                                    "page": "${packages}/BracketHighlighter/quickstart.md"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "支持信息",
+                                "command": "bracket_highlighter_support_info"
+                            },
+                            {
+                                "caption": "问题反馈",
+                                "command": "bracket_highlighter_open_site",
+                                "args": {
+                                    "url": "https://github.com/facelessuser/BracketHighlighter/issues"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
