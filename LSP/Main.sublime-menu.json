@@ -1,0 +1,323 @@
+[
+  {
+    "id": "edit",
+    "children": [
+      {
+        "id": "fold",
+        "children": [
+          {
+            "id": "lsp",
+            "caption": "-"
+          },
+          {
+            "command": "lsp_fold",
+            "args": {"prefetch": true}
+          }
+        ]
+      },
+      {
+        "id": "lsp",
+        "caption": "-"
+      },
+      {
+        "command": "lsp_fold",
+        "args": {"prefetch": true, "hidden": true}
+      },
+      {
+        "command": "lsp_source_action",
+        "args": {"index": -1}
+      },
+      {
+        "caption": "LSP: 源代码操作",
+        "children": [
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 0}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 1}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 2}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 3}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 4}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 5}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 6}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 7}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 8}
+          },
+          {
+            "command": "lsp_source_action",
+            "args": {"index": 9}
+          }
+        ]
+      },
+      {
+        "caption": "LSP: 重构",
+        "children": [
+          {
+            "caption": "重命名…",
+            "command": "lsp_symbol_rename"
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 0}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 1}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 2}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 3}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 4}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 5}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 6}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 7}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 8}
+          },
+          {
+            "command": "lsp_refactor",
+            "args": {"index": 9}
+          }
+        ]
+      },
+      {
+        "caption": "LSP: 格式化",
+        "children": [
+          {
+            "caption": "格式化文件",
+            "command": "lsp_format_document"
+          },
+          {
+            "caption": "格式化所选内容",
+            "command": "lsp_format_document_range"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "selection",
+    "children": [
+      {
+        "id": "lsp",
+        "caption": "-"
+      },
+      {
+        "caption": "LSP: 扩展选区",
+        "command": "lsp_expand_selection"
+      }
+    ]
+  },
+  {
+    "id": "view",
+    "children": [
+      {
+        "id": "lsp",
+        "caption": "-"
+      },
+      {
+        "caption": "LSP: 显示 Code Lens 提示",
+        "command": "lsp_toggle_code_lenses",
+        "checkbox": true
+      },
+      {
+        "caption": "LSP: 显示内联提示",
+        "command": "lsp_toggle_inlay_hints",
+        "checkbox": true
+      },
+      {
+        "caption": "LSP: 显示悬停弹窗",
+        "command": "lsp_toggle_hover_popups",
+        "checkbox": true
+      }
+    ]
+  },
+  {
+    "id": "goto",
+    "children": [
+      {
+        "id": "lsp",
+        "caption": "-"
+      },
+      {
+        "caption": "LSP: 跳转到符号…",
+        "command": "lsp_document_symbols"
+      },
+      {
+        "caption": "LSP: 在项目中跳转到符号…",
+        "command": "lsp_workspace_symbols"
+      },
+      {
+        "caption": "LSP: 跳转到定义…",
+        "command": "lsp_symbol_definition"
+      },
+      {
+        "caption": "LSP: 跳转到类型定义…",
+        "command": "lsp_symbol_type_definition"
+      },
+      {
+        "caption": "LSP: 跳转到声明…",
+        "command": "lsp_symbol_declaration"
+      },
+      {
+        "caption": "LSP: 跳转到实现…",
+        "command": "lsp_symbol_implementation"
+      },
+      {
+        "caption": "LSP: 跳转到诊断…",
+        "command": "lsp_goto_diagnostic"
+      },
+      {
+        "caption": "LSP: 查找引用",
+        "command": "lsp_symbol_references"
+      },
+      {
+        "caption": "LSP: 打开链接",
+        "command": "lsp_open_link"
+      }
+    ]
+  },
+  {
+    "id": "tools",
+    "children": [
+      {
+        "id": "lsp",
+        "caption": "LSP",
+        "children": [
+          {
+            "id": "lsp-restart",
+            "caption": "-"
+          },
+          {
+            "caption": "重启语言服务",
+            "command": "lsp_restart_client"
+          },
+          {
+            "id": "lsp-panels",
+            "caption": "-"
+          },
+          {
+            "caption": "显示/隐藏 日志面板",
+            "command": "lsp_toggle_server_panel"
+          },
+          {
+            "caption": "显示/隐藏 诊断面板",
+            "command": "lsp_show_diagnostics_panel"
+          },
+          {
+            "caption": "显示/隐藏 消息面板",
+            "command": "lsp_toggle_messages_panel"
+          },
+          {
+            "id": "lsp-server-configurations",
+            "caption": "-"
+          },
+          {
+            "caption": "全局启用语言服务…",
+            "command": "lsp_enable_language_server_globally"
+          },
+          {
+            "caption": "全局禁用语言服务…",
+            "command": "lsp_disable_language_server_globally"
+          },
+          {
+            "caption": "在项目中启用语言服务…",
+            "command": "lsp_enable_language_server_in_project"
+          },
+          {
+            "caption": "在项目中禁用语言服务…",
+            "command": "lsp_disable_language_server_in_project"
+          },
+          {
+            "caption": "排查语言服务配置…",
+            "command": "lsp_troubleshoot_server"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "插件设置",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "LSP",
+            "id": "lsp-settings",
+            "children": [
+              {
+                "caption": "设置",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/LSP/LSP.sublime-settings",
+                  "default": "// Settings in here override those in \"LSP/LSP.sublime-settings\"\n{\n\t$0\n}\n"
+                }
+              },
+              {
+                "caption": "语言服务配置",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/LSP/LanguageServers.sublime-settings",
+                  "default": "{\n\t$0\n}\n"
+                }
+              },
+              {
+                "caption": "快捷键设置",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/LSP/Default.sublime-keymap",
+                  "user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+                  "default": "[\n\t$0\n]\n"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
