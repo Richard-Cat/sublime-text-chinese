@@ -1,0 +1,97 @@
+[
+    {
+        "caption": "选择",
+        "id": "selection",
+        "children": [
+            {
+                "id": "format",
+                "caption": "格式化",
+                "children": [
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "caption": "JsPrettier：格式化代码",
+                        "command": "js_prettier"
+                    },
+                    {
+                        "caption": "-"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "首选项",
+        "id": "preferences",
+        "children": [
+            {
+                "caption": "插件设置",
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "JsPrettier",
+                        "children": [
+                            {
+                                "caption": "设置 – 并排对照",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/JsPrettier/JsPrettier.sublime-settings",
+                                    "default": "// Settings in here override those in \"${packages}/JsPrettier/JsPrettier.sublime-settings\",\n\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "设置 – 默认",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/JsPrettier/JsPrettier.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "设置 – 用户",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/JsPrettier.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "快速入门",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/JsPrettier/messages/install.txt"
+                                }
+                            },
+                            {
+                                "caption": "更新日志",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/JsPrettier/CHANGELOG.md"
+                                }
+                            },
+                            {
+                                "caption": "项目主页",
+                                "command": "js_prettier_open_site",
+                                "args": {
+                                    "url": "https://github.com/jonlabelle/SublimeJsPrettier"
+                                }
+                            },
+                            {
+                                "caption": "问题反馈",
+                                "command": "js_prettier_open_site",
+                                "args": {
+                                    "url": "https://github.com/jonlabelle/SublimeJsPrettier/issues"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

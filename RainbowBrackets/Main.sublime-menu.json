@@ -1,0 +1,44 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children": [
+                    {
+                        "caption": "RainbowBrackets",
+                        "mnemonic": "R",
+                        "children": [
+                            {
+                                "caption": "文档",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/RainbowBrackets/README.md"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "设置",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/RainbowBrackets/RainbowBrackets.sublime-settings",
+                                    "default": "// RainbowBrackets Preferences – User\n// ====================================================\n\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "快捷键设置",
+                                "command": "edit_settings",
+                                "mnemonic": "K",
+                                "args": {"base_file": "${packages}/RainbowBrackets/keymap/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n"}
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

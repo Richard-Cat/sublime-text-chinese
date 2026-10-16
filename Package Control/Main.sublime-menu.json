@@ -18,14 +18,14 @@
 								{
 									"file": "${packages}/Package Control/Package Control.sublime-settings"
 								},
-								"caption": "Settings – Default"
+								"caption": "设置 – 默认"
 							},
 							{
 								"command": "open_file", "args":
 								{
 									"file": "${packages}/User/Package Control.sublime-settings"
 								},
-								"caption": "Settings – User"
+								"caption": "设置 – 用户"
 							},
 							{ "caption": "-" }
 						]
