@@ -12,7 +12,7 @@
             "id": "lsp-settings",
             "children": [
               {
-                "caption": "Servers",
+                "caption": "已安装语言服务",
                 "id": "lsp-servers",
                 "children": [
                   {
